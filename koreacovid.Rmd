@@ -61,7 +61,11 @@ Of the people who are alive there 56% females and 44% males and of those who are
 
 ## Inferential results 
 
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 ## Conclusions
