@@ -1,7 +1,7 @@
 ---
 title: "covid 19"
-author: "Dr K"
-date: "5/2/2020"
+author: "Cindy Galdamez"
+date: "10/19/2020"
 output:
   html_document: default
   pdf_document: default
@@ -49,9 +49,16 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 
 
 
+
   
 ## Numerical results
 
+```{r}
+table1 <- xtabs(~result + Sex, data=kRdata)
+rowPerc(table1)
+colPerc(table1)
+```
+Of the people who are alive there 56% females and 44% males and of those who are dead there are 36% females and 64% males.
 
 ## Inferential results 
 
